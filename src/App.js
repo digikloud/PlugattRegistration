@@ -1,9 +1,14 @@
 import './App.css';
 import Menu from './Pages/menu';
+import { ThemeProvider } from '@mui/material';
+import theme from './theme';
 function App() {
   return (
     <div className="App">
-      <Menu />
+      <ThemeProvider theme={theme}>
+          <Menu />
+      </ThemeProvider>
+      
     </div>
   );
 }
